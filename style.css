@@ -1,0 +1,57 @@
+body {
+    background-color:lightgrey;
+}
+
+.h2{
+    text-align: right
+}
+.box{
+    background-color:white;
+    padding: 200px;
+}
+
+.image-vis {
+	height: 140px;
+	width: 140px;;
+}
+.whitebackground {
+    background-color:white;
+    padding: 24px;
+    float:left;
+
+}
+
+#firstHeader{
+    color: darkcyan;
+    font-family: times;
+    font-size: 175%;
+    font-weight: bold;   
+}
+
+p.big {
+    line-height: 2.0;
+}
+
+.tealbackground {
+    background-color: darkcyan;
+    font-family: times;
+    font-size: 175%;
+    padding: 15px;
+}
+
+.navbar-default .navbar-brand{
+    color: white;
+}
+
+h3{
+    font-size: 100%;
+
+}
+
+#secondHeader{
+    color: darkcyan;
+    font-family: times;
+    font-size: 175%;
+    font-weight: bold; 
+}
+

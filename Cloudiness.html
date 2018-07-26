@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+        <style>
+                * {
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    margin: 0;
+                    font-family: Arial;
+                }
+                
+                .header {
+                    text-align: center;
+                    padding: 32px;
+                }
+                
+                .row {
+                    display: -ms-flexbox; /* IE10 */
+                    display: flex;
+                    -ms-flex-wrap: wrap; /* IE10 */
+                    flex-wrap: wrap;
+                    padding: 0 4px;
+                }
+                
+                /* Create four equal columns that sits next to each other */
+                .column {
+                    -ms-flex: 50%; /* IE10 */
+                    flex: 50%;
+                    max-width: 50%;
+                    padding: 0 4px;
+                }
+                
+                .column img {
+                    margin-top: 10px;
+                    vertical-align: middle;
+                }
+                
+                /* Responsive layout - makes a two column-layout instead of four columns */
+                @media screen and (max-width: 800px) {
+                    .column {
+                        -ms-flex: 50%;
+                        flex: 50%;
+                        max-width: 50%;
+                    }
+                }
+                
+                /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 800px) {
+                    .column {
+                        -ms-flex: 500%;
+                        flex: 50%;
+                        max-width: 50%;
+                    }
+                }
+                .paragraphadjustment {
+                        text-align: inherit;
+                        text-justify: inter-word;
+                    }   
+                    .classWithPad { margin:10px; padding:10px; }
+
+                </style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cloudiness</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand tealbackground" href="index.html">Latitude</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                    <li><a href="MaxTemp.html">Max Temperature</a></li>
+                    <li><a href="Humidity.html">Humidity</a></li>
+                    <li><a href="Cloudiness.html">Cloudiness</a></li>
+                    <li><a href="Wind Speed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="Data.html">Data</a></li>
+          <li><a href="Comparison.html">Comparison</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <div class="container-fluid">   
+            <div class="col-md-8 form-group whitebackground">
+                <h1 id = "firstHeader">Cloudiness</h1>
+                <hr>
+                    <div class="row"> 
+                            <div class="classWithPad" class="column">
+                                <img src="Instructions/Resources/assets/images/Fig3.png" style="width:100%">
+                                <p> Similarly to the humidity graph in this graph one can make the distinction that cloudiness isnt dependent on latitude. Per our 
+                                    analysis we determined that there wasnt a correlation that would indicate this relationship is valid. 
+                                
+                                </p>
+                            </div>
+                    </div>
+            </div>
+    
+            
+        <div class="col-md-4 form-group whitebackground">
+                <h1 id = "firstHeader">Visualizations</h1>
+                <hr>
+                <div class="row"> 
+                        <div class="column">
+                            <a target="_blank "href="MaxTemp.html">
+                            <img src="Instructions/Resources/assets/images/Fig1.png" style="width:100%">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a target="_blank "href="Humidity.html">
+                            <img src="Instructions/Resources/assets/images/Fig2.png" style="width:100%">
+                            </a>
+                        </div>  
+                </div>
+                <div class="row"> 
+                        <div class="column">
+                            <a target="_blank "href="Cloudiness.html">
+                            <img src="Instructions/Resources/assets/images/Fig3.png" style="width:100%">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a target="_blank "href="Wind Speed.html">
+                            <img src="Instructions/Resources/assets/images/Fig4.png" style="width:100%">
+                            </a>
+                        </div>  
+                </div>
+
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+      <!-- Bootstrap CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+ 
+</body>
+</html>
